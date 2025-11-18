@@ -4,7 +4,7 @@ using namespace std;
 
 int main() {
     int n;
-    list<string> l;
+    list<string> list;
 
     cout << "Enter the number of elements: ";
     cin >> n;
@@ -13,10 +13,10 @@ int main() {
         string s;
         cout << "Enter element " << i+1 << ": ";
         cin >> s;
-        l.push_back(s);
+        list.push_back(s);
     }
 
-    for (auto it = l.begin(); it != l.end(); it++) {
+    for (auto it = list.begin(); it != list.end(); it++) {
         cout << *it << " ";
     }
     cout << endl;
